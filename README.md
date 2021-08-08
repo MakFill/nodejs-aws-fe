@@ -1,4 +1,4 @@
-CloudFront URL: https://d22eu7juxn4q42.cloudfront.net
+CloudFront URL: https://d22eu7juxn4q42.cloudfront.net<br />
 S3-website: http://my-second-rs-app-makfill.s3-website-us-east-1.amazonaws.com
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
