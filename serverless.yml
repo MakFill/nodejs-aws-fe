@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: MyShop
+service: MyShopSecond
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -22,7 +22,7 @@ frameworkVersion: '2'
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   region: eu-west-1
 
 plugins:
@@ -31,7 +31,7 @@ plugins:
 
 custom:
   client:
-    bucketName: my-second-rs-app-makfill
+    bucketName: my-next-rs-app-makfill
     distributionFolder: build
 
   ## Serverless-single-page-app-plugin configuration:
