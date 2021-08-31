@@ -36,7 +36,7 @@ export default function Products() {
 
   useEffect(() => {
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
-    axios.get(`${API_PATHS.bff}`).then((res) => setProducts(res.data.productList.default));
+    axios.get(`${API_PATHS.bff}`).then((res) => setProducts(res.data));
   }, []);
 
   return (
