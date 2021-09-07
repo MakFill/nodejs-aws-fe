@@ -39,21 +39,23 @@
     "formik": "^2.1.5",
     "formik-material-ui": "^2.0.1",
     "lodash": "^4.17.19",
+    "mime-types": "^2.1.32",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "serverless-finch": "^2.6.0",
+    "serverless-single-page-app-plugin": "file:./serverless-single-page-app-plugin",
     "typescript": "^3.9.10",
-    "yup": "^0.29.1",
-    "serverless-single-page-app-plugin": "file:./serverless-single-page-app-plugin"
+    "yup": "^0.29.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0"
+    "@types/jest": "^24.0.0",
+    "@types/mime-types": "^2.1.1"
   },
   "eslintConfig": {
     "extends": "react-app"
