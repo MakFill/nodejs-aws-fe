@@ -1,4 +1,4 @@
-CloudFront URL: https://d27dc8w95zah4s.cloudfront.net
+CloudFront URL: https://d27dc8w95zah4s.cloudfront.net <br>
 S3-website: http://my-shop-aws-2022-makfill.s3-website-eu-west-1.amazonaws.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
