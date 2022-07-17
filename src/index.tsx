@@ -2,19 +2,28 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'index.css';
 import App from 'components/App/App';
-import {store} from 'store/store';
-import {Provider} from 'react-redux';
+import { store } from 'store/store';
+import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
-import CssBaseline from "@material-ui/core/CssBaseline";
+import CssBaseline from '@material-ui/core/CssBaseline';
 import axios from 'axios';
 
 axios.interceptors.response.use(
-  response => {
+  (response) => {
     return response;
   },
-  function(error) {
-    if (error?.response?.status === 400) {
+  function (error) {
+    const responseError = error?.response?.status;
+    if (responseError === 400) {
       alert(error.response.data?.data);
+    }
+
+    if (responseError === 401) {
+      alert('401 Error: Unauthorized');
+    }
+
+    if (responseError === 403) {
+      alert('403 Error: Forbidden');
     }
 
     return Promise.reject(error?.response ?? error);
@@ -24,8 +33,8 @@ axios.interceptors.response.use(
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <CssBaseline/>
-      <App/>
+      <CssBaseline />
+      <App />
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
