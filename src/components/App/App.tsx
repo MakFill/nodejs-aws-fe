@@ -8,16 +8,8 @@ import PageCart from 'components/pages/PageCart/PageCart';
 import PageOrders from 'components/pages/PageOrders/PageOrders';
 import PageOrder from 'components/pages/PageOrder/PageOrder';
 import PageProductImport from 'components/pages/admin/PageProductImport/PageProductImport';
-import { TEST_TOKEN, TOKEN } from 'constants/tokenVariables';
 
 function App() {
-  useEffect(() => {
-    const token = localStorage.getItem(TOKEN);
-    if (!token) {
-      localStorage.setItem(TOKEN, TEST_TOKEN);
-    }
-  }, []);
-
   return (
     <Router>
       <Switch>
